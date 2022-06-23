@@ -32,7 +32,7 @@ function App() {
           {' '}
           <p>There are {myJobs.length} jobs!</p>
           <ul>
-            {myJobs.map((job) => {
+            {myJobs.jobs.map((job) => {
               return <li>{job.position}</li>;
             })}
           </ul>
