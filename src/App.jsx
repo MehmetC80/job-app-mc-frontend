@@ -24,7 +24,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Jobs</h1>
-      <p>There are {jobs.length} jobs!</p>
+      <p>There are {jobs.jobs.length} jobs!</p>
     </div>
   );
 }
