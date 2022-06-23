@@ -25,7 +25,7 @@ function App() {
     <div className='App'>
       <h1>Jobs</h1>
 
-      {myJobs.jobs.length === 0 ? (
+      {myJobs.length === 0 ? (
         <div>Loading...</div>
       ) : (
         <>
