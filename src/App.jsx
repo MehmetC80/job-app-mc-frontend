@@ -31,11 +31,17 @@ function App() {
         <>
           {' '}
           <p>There are {myJobs.length} jobs!</p>
-          <ul>
+          <div>
             {myJobs.jobs.map((job) => {
-              return <li>{job.position}</li>;
+              return (
+                <>
+                  <div>{job.position}</div>
+                  <div>{job.bulkText}</div>
+                  <div>{job.url}</div>
+                </>
+              );
             })}
-          </ul>
+          </div>
         </>
       )}
     </div>
