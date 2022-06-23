@@ -24,12 +24,20 @@ function App() {
   return (
     <div className='App'>
       <h1>Jobs</h1>
-      <p>There are {myJobs.length} jobs!</p>
-      <ul>
-        {myJobs.jobs.map((job) => {
-          return <li>{job.position}</li>;
-        })}
-      </ul>
+
+      {myJobs.jobs.length === 0 ? (
+        <div>Loading...</div>
+      ) : (
+        <>
+          {' '}
+          <p>There are {myJobs.length} jobs!</p>
+          <ul>
+            {myJobs.jobs.map((job) => {
+              return <li>{job.position}</li>;
+            })}
+          </ul>
+        </>
+      )}
     </div>
   );
 }
