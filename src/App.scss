@@ -13,6 +13,7 @@ body {
 
   .job {
     padding: 20px 30px;
+    margin: 20px 30px;
     background-color: #17191d;
     border-radius: 10px;
     .position {
@@ -26,6 +27,8 @@ body {
     .url {
       color: limegreen;
       font-weight: bolder;
+      padding: 20px 30px;
+      cursor: pointer;
     }
   }
 }
