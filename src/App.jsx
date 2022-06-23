@@ -9,14 +9,14 @@ const backendUrl = import.meta.env.VITE_BACKEND_URL;
 const url = `${backendUrl}/jobs`;
 
 function App() {
-  const [jobs, setJobs] = useState([]);
+  const [myJobs, setMyJobs] = useState([]);
 
   useEffect(() => {
     const fetchJobs = async () => {
       const response = await fetch(url);
       const data = await response.json();
 
-      setJobs(data);
+      setMyJobs(data);
     };
     fetchJobs();
   });
@@ -24,7 +24,7 @@ function App() {
   return (
     <div className='App'>
       <h1>Jobs</h1>
-      <p>There are {jobs.jobs.length} jobs!</p>
+      <p>There are {myJobs.jobs.length} jobs!</p>
     </div>
   );
 }
