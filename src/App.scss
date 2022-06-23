@@ -10,4 +10,22 @@ body {
   h1 {
     color: orange;
   }
+
+  .job {
+    padding: 20px 30px;
+    background-color: #17191d;
+    border-radius: 10px;
+    .position {
+      color: orange;
+      padding: 20px 30px;
+    }
+    .bulktext {
+      padding: 20px 30px;
+      font-style: italic;
+    }
+    .url {
+      color: limegreen;
+      font-weight: bolder;
+    }
+  }
 }

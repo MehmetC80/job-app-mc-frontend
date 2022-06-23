@@ -30,15 +30,15 @@ function App() {
       ) : (
         <>
           {' '}
-          <p>There are {myJobs.length} jobs!</p>
+          <p>There are {myJobs.jobs.length} jobs!</p>
           <div>
-            {myJobs.jobs.map((job) => {
+            {myJobs.jobs.map((job, i) => {
               return (
-                <>
-                  <div>{job.position}</div>
-                  <div>{job.bulkText}</div>
-                  <div>{job.url}</div>
-                </>
+                <div key={i} className='job'>
+                  <div className='position'>{job.position}</div>
+                  <div className='bulktext'>{job.bulkText}</div>
+                  <div className='url'>{job.url}</div>
+                </div>
               );
             })}
           </div>
